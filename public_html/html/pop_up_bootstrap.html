@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pop Up con Bootstrap</title>
+	<!-- Incluya las bibliotecas de Bootstrap y jQuery -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+	<!-- Agregue un botón que llame a la ventana modal -->
+    <div style="margin-bottom: 15%;margin-top: 5%;">
+	<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Abrir Pop Up</button>
+    </div>
+    <div>
+        <p><a class="btn btn-info btn-lg"  href="/public_html/">Regresar</a></p>
+    </div>
+	<!-- Cree la ventana modal -->
+	<div class="modal fade" id="myModal" role="dialog">
+		<div class="modal-dialog">
+			<!-- Contenido de la ventana modal -->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">×</button>
+					<h4 class="modal-title">¡Bienvenido!</h4>
+				</div>
+				<div class="modal-body">
+					<p>Este es un ejemplo de pop up creado con Bootstrap.</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+    
+</div>
+</body>
+</html>
